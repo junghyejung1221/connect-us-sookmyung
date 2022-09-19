@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const backendPortNumber = "8080";
+const backendPortNumber = "5001";
 const serverUrl =
-  "https://connect-us-jp.herokuapp.com/";
+  "http://localhost:" + backendPortNumber + "/";
 
 async function get(endpoint, params = "") {
   console.log(
